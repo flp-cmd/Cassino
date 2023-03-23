@@ -102,15 +102,11 @@ def roleta(caixa): #Funcao que chama as outras, retorna o saldo da aposta
     if ganhos > 0:
         print(f"Você ganhou {ganhos}R$")
         if len(linhas_ganhas) == 1:
-            print("Você venceu na linha ",end="")
-            print(*linhas_ganhas,end="")
-            print(" com o simbolo ",end="")
-            print(*simbolos_acertados)
+            print("Você venceu na linha",*linhas_ganhas,end="")
+            print(" com o simbolo",*simbolos_acertados)
         else:
-            print("Você venceu nas linhas: ",end="")
-            print(*linhas_ganhas,end="")
-            print(" com os simbolos: ",end="")
-            print(*simbolos_acertados)
+            print("Você venceu nas linhas:",*linhas_ganhas,end="")
+            print(" com os simbolos:",*simbolos_acertados)
     else:
         print("Você não ganhou em nenhuma linha.")
 
